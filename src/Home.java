@@ -1,5 +1,5 @@
 import java.awt.*;
-public class Home {
+public class home {
 	private int x, y;
 	private Client tc;
 	public static final int width = 60, length = 45; 
@@ -10,7 +10,7 @@ public class Home {
 		homeImags = new Image[] { tk.getImage(walls.class
 				.getResource("Images/home.gif")), };
 	}
-	public Home(int x, int y, Client tc) {
+	public home(int x, int y, Client tc) {
 		this.x = x;
 		this.y = y;
 		this.tc = tc; 
@@ -20,7 +20,7 @@ public class Home {
 		tc.steels.clear();
 		tc.otherWall.clear();
 		tc.bombs.clear();
-		tc.theWater.clear();
+		tc.thewater.clear();
 		tc.grasss.clear();
 		tc.bullets.clear();
 		tc.hometank.setLive(false);

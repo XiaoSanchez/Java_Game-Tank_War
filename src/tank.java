@@ -224,14 +224,14 @@ public class tank {
 		}
 		return false;
 	}
-	public boolean collideWater(Water r) {    
+	public boolean collidewater(water r) {    
 		if (this.live && this.getRect().intersects(r.getRect())) {
 			this.changToOldDir();
 			return true;
 		}
 		return false;
 	}
-	public boolean collideHome(Home h) {   
+	public boolean collidehome(home h) {   
 		if (this.live && this.getRect().intersects(h.getRect())) {
 			this.changToOldDir();
 			return true;

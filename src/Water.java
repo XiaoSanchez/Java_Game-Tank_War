@@ -1,29 +1,29 @@
 import java.awt.*;
-public class Water {
-	public static final int WaterWidth = 30;
-	public static final int WaterLength = 30;
+public class water {
+	public static final int waterWidth = 30;
+	public static final int waterLength = 30;
 	private int x, y;
 	Client tc ;
 	private static Toolkit tk = Toolkit.getDefaultToolkit();
-	private static Image[] WaterImags = null;
+	private static Image[] waterImags = null;
 	static {   
-		WaterImags = new Image[]{
+		waterImags = new Image[]{
 				tk.getImage(walls.class.getResource("Images/water.gif")),
 		};
 	}
-	public Water(int x, int y, Client tc) {    
+	public water(int x, int y, Client tc) {    
 		this.x = x;
 		this.y = y;
 		this.tc = tc;             
 	}
 	public void draw(Graphics g) {
-		g.drawImage(WaterImags[0],x, y, null);            
+		g.drawImage(waterImags[0],x, y, null);            
 	}
-	public static int getWaterWidth() {
-		return WaterWidth;
+	public static int getwaterWidth() {
+		return waterWidth;
 	}
-	public static int getWaterLength() {
-		return WaterLength;
+	public static int getwaterLength() {
+		return waterLength;
 	}
 	public int getX() {
 		return x;
@@ -38,6 +38,6 @@ public class Water {
 		this.y = y;
 	}
 	public Rectangle getRect() {
-		return new Rectangle(x, y, WaterWidth, WaterLength);
+		return new Rectangle(x, y, waterWidth, waterLength);
 	}
 }

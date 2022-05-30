@@ -15,8 +15,8 @@ public class Client extends Frame implements ActionListener {
 	Image screenImage;
 	tank hometank = new tank(300, 560, true, Direction.STOP, this);
 	heal blood = new heal(); 
-	Home home = new Home(373, 545, this);
-	List<Water> theWater = new ArrayList<Water>();
+	home home = new home(373, 545, this);
+	List<water> thewater = new ArrayList<water>();
 	List<tank> tanks = new ArrayList<tank>();
 	List<bomb> bombs = new ArrayList<bomb>();
 	List<Bullets> bullets = new ArrayList<Bullets>();
@@ -62,13 +62,13 @@ public class Client extends Frame implements ActionListener {
 			g.setFont(f);
 		}
 		g.setColor(c);
-		for (int i = 0; i < theWater.size(); i++) { 
-			Water r = theWater.get(i);
+		for (int i = 0; i < thewater.size(); i++) { 
+			water r = thewater.get(i);
 			r.draw(g);
 		}
-		for (int i = 0; i < theWater.size(); i++) {
-			Water r = theWater.get(i);
-			hometank.collideWater(r);
+		for (int i = 0; i < thewater.size(); i++) {
+			water r = thewater.get(i);
+			hometank.collidewater(r);
 			r.draw(g);
 		}
 		home.draw(g); 
@@ -110,13 +110,13 @@ public class Client extends Frame implements ActionListener {
 				t.collideWithWall(mw);
 				mw.draw(g);
 			}
-			for (int j = 0; j < theWater.size(); j++) {
-				Water r = theWater.get(j); 
-				t.collideWater(r);
+			for (int j = 0; j < thewater.size(); j++) {
+				water r = thewater.get(j); 
+				t.collidewater(r);
 				r.draw(g);
 			}
 			t.collideWithtanks(tanks); 
-			t.collideHome(home);
+			t.collidehome(home);
 			t.draw(g);
 		}
 		blood.draw(g);
@@ -137,7 +137,7 @@ public class Client extends Frame implements ActionListener {
 			mw.draw(g);
 		}
 		hometank.collideWithtanks(tanks);
-		hometank.collideHome(home);
+		hometank.collidehome(home);
 		for (int i = 0; i < steels.size(); i++) {
 			steels w = steels.get(i);
 			hometank.collideWithWall(w);
@@ -248,8 +248,8 @@ public class Client extends Frame implements ActionListener {
 		}
 		for (int i = 0; i < 4; i++) { 
 			if (i < 4) {
-				theWater.add(new Water(90 + 30 * i, 100, this));
-				theWater.add(new Water(300 + 30 * i, 100, this));
+				thewater.add(new water(90 + 30 * i, 100, this));
+				thewater.add(new water(300 + 30 * i, 100, this));
 			}
 		}
 		for (int i = 0; i < 20; i++) {
