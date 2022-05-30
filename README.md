@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Tank War
 
-![product-screenshot](https://github.com/XiaoSanchez/Tank_War/src/ScreenShot.jpg)
+![product-screenshot](https://github.com/XiaoSanchez/Tank_War/blob/main/src/ScreenShot.jpeg)
 
 
 ### Built With
