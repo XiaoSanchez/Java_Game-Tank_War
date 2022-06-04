@@ -6,15 +6,11 @@
 
 ### Built With
 
-This project is build with java 100%
+Java
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-Download the zip file or clone the repository to your local machine compile the java file then enjoy the game~
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-This project should not being used for any profit purpose!
+Have Fun!
+
+SOURCES AND CREDITS:
+ - J2ME (https://www.oracle.com/java/technologies/javameoverview.html)
