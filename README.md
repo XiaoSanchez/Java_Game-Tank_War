@@ -1,16 +1,11 @@
-<!-- ABOUT THE PROJECT -->
-## Tank War
 
-![product-screenshot](https://github.com/XiaoSanchez/Tank_War/blob/main/src/ScreenShot.jpeg)
+# Java Game: Tank War
+Implements the functioning of Tank War that performs all functions in the tasks, developed by using Java.
+## Features
 
 
-### Built With
+![App Screenshot](https://github.com/XiaoSanchez/Tank_War/blob/main/src/ScreenShot.jpeg)
+## License
 
-Java
+[MIT](https://choosealicense.com/licenses/mit/)
 
-## Usage
-
-Have Fun!
-
-SOURCES AND CREDITS:
- - J2ME (https://www.oracle.com/java/technologies/javameoverview.html)
